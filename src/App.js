@@ -1,7 +1,27 @@
+
 import Diena from "./Diena";
-import Stunda from "./Stunda";
+
+
+
 function App() {
-  return <div>te būs stundu saraksts</div>;
+  const pirmdienasStundas = ["sports",
+     "dabaszinibas",
+      "vesture un socialas zinibas", 
+      "krievu valoda"];
+      const otradienasStundas = ["matematikas specialas nodalas",
+     "datorsistemas un datortikli",
+      "dabaszinibas", 
+      "matematika"];
+  return (
+    <>
+    
+    <Diena Diena="pirmdiena" stundas={pirmdienasStundas}/>
+    <Diena Diena="otrdiena" stundas={otradienasStundas}/>
+    {/* <Diena Diena="tresdiena"/>
+    <Diena Diena="ceturdiena"/>
+    <Diena Diena="piekdiena"/> */}
+    </>
+  );
   
   
   
@@ -9,6 +29,3 @@ function App() {
 
 export default App;
 
-//uztaisi divas jaunas komponentes:
-//- Diena.js
-//- Stunda.js

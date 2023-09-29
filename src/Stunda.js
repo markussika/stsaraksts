@@ -1,5 +1,10 @@
-function Stunda(){
-    return <p>sveika Stunda?!</p>
+function Stunda(prop) {
+    return (
+        
+        <li>{prop.nosaukums}</li>
+        
+    
+    )
 }
 
 export default Stunda;
