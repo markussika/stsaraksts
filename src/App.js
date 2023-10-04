@@ -21,7 +21,7 @@ function App() {
     <Diena Diena="ceturdiena"/>
     <Diena Diena="piekdiena"/> */}
     </>
-  );
+  )
   
   
   
