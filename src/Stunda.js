@@ -1,7 +1,7 @@
-function Stunda(prop) {
+function Stunda(props) {
     return (
         
-        <li>{prop.nosaukums}</li>
+        <li>{props.nosaukums}</li>
         
     
     )

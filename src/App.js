@@ -4,14 +4,22 @@ import Diena from "./Diena";
 
 
 function App() {
-  const pirmdienasStundas = ["sports",
+  // const pirmdienasStundas = ["sports",
+  //    "dabaszinibas",
+  //     "vesture un socialas zinibas", 
+  //     "krievu valoda"];
+  //     const otradienasStundas = ["matematikas specialas nodalas",
+  //    "datorsistemas un datortikli",
+  //     "dabaszinibas", 
+  //     "matematika"];
+      const visasStundas = {
+        pirmdiena: [
+          "sports",
      "dabaszinibas",
       "vesture un socialas zinibas", 
-      "krievu valoda"];
-      const otradienasStundas = ["matematikas specialas nodalas",
-     "datorsistemas un datortikli",
-      "dabaszinibas", 
-      "matematika"];
+      "krievu valoda"
+        ]
+      }
   return (
     <>
     
