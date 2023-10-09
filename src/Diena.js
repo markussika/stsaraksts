@@ -7,7 +7,7 @@ function Diena(props){
     });
     return (
         <>
-        <h2>{props.Diena}</h2>
+        <h2>{props.diena}</h2>
         <ul>
         {stundaJSX}
         </ul>

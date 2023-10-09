@@ -4,30 +4,44 @@ import Diena from "./Diena";
 
 
 function App() {
-  // const pirmdienasStundas = ["sports",
-  //    "dabaszinibas",
-  //     "vesture un socialas zinibas", 
-  //     "krievu valoda"];
-  //     const otradienasStundas = ["matematikas specialas nodalas",
-  //    "datorsistemas un datortikli",
-  //     "dabaszinibas", 
-  //     "matematika"];
-      const visasStundas = {
-        pirmdiena: [
-          "sports",
-     "dabaszinibas",
-      "vesture un socialas zinibas", 
-      "krievu valoda"
-        ]
-      }
+  
+      const visasStundas = [
+        {diena: "pirmdiena", 
+      stundas:["sports",
+      "dabaszinibas",
+       "vesture",
+        "smaidins"]},
+        {diena: "otradiena", 
+        stundas:["dabaszinibas",
+        "krivu valdoa",
+         "tava mamma",
+          "pavarstunda"]},
+        {diena: "tresdinea", 
+        stundas:["padzilinatais kurss",
+        "klases stunda",
+         "fiika",
+          "dabaszinibas"]},
+        {diena: "ceturtdiena", 
+        stundas:["sports",
+        "sports",
+         "ekskursija",
+          "smaidins"]},
+        {diena: "piektdiena", 
+        stundas:["patstavigais",
+        "datorsistemas unb datortikli",
+         ]}
+      ];
+      const dienasJSX = visasStundas.map((diena, indekss) =>{
+      return <Diena key={indekss} diena = {diena.diena} stundas = {diena.stundas}/>
+      });
   return (
     <>
     
-    <Diena Diena="pirmdiena" stundas={pirmdienasStundas}/>
-    <Diena Diena="otrdiena" stundas={otradienasStundas}/>
-    {/* <Diena Diena="tresdiena"/>
-    <Diena Diena="ceturdiena"/>
-    <Diena Diena="piekdiena"/> */}
+    
+    
+    
+        {dienasJSX}
+        
     </>
   )
   
