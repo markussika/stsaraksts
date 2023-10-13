@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import Diena from "./Diena";
 import Stunda from "./Stunda";
+import"./global.css";
+
 
 
 

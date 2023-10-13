@@ -39,9 +39,9 @@ function App() {
     
     
     
-    
+      <div >
         {dienasJSX}
-        
+        </div>
     </>
   )
   
